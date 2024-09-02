@@ -1,4 +1,4 @@
-import { AiFillGithub, AiOutlineTwitter, AiFillLinkedin } from 'react-icons/ai';
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { GoLocation } from 'react-icons/go';
 import { GiTie } from 'react-icons/gi';
 import { useTheme } from 'next-themes';
@@ -36,13 +36,10 @@ const Siderbar = () => {
 			</a>
 
 			<div className='flex justify-around w-9/12 mx-auto my-5 text-green md:w-full'>
-				<a href=''>
+				<a target="__blank" rel="noreferrer" href="https://github.com/Abdussamadajao">
 					<AiFillGithub className='w-8 h-8 cursor-pointer' />
 				</a>
-				<a href=''>
-					<AiOutlineTwitter className='w-8 h-8 cursor-pointer' />
-				</a>
-				<a href=''>
+				<a target="__blank" rel="noreferrer" href="https://www.linkedin.com/in/ajaoabdussamad/">
 					<AiFillLinkedin className='w-8 h-8 cursor-pointer' />
 				</a>
 			</div>
@@ -55,10 +52,10 @@ const Siderbar = () => {
 					<span>Abuja,Nigeria</span>
 				</div>
 				<p>abdussamadajao@gmail.com</p>
-				<p>08054176385/09027974675</p>
+				<p>08054176385 / 09027974675</p>
 			</div>
 			<button className='w-8/12 px-5 py-2 my-2 text-white rounded-full focus:outline-none bg-gradient-to-tr from-green to-blue-400'>
-				Email Me
+				<a href="mailto:abdussamadajao@gmail.com">Email Me</a>
 			</button>
 			<button
 				onClick={changeTheme}
